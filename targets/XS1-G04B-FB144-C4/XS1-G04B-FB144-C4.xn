@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network xmlns="http://www.xmos.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.xmos.com http://www.xmos.com">
+  <Type>Device</Type>
+  <Name>XS1-G04B-FB144-C4 Device</Name>
+
+  <Declarations>
+    <Declaration>tileref tile[4]</Declaration>
+  </Declarations>
+
+  <Packages>
+    <Package id="0" Type="XS1-G4B-FB144">
+      <Nodes>
+        <Node Id="0" InPackageId="0" Type="XS1-G4B" SystemFrequency="400MHz">
+          <Tile Number="0" Reference="tile[0]"/>
+          <Tile Number="1" Reference="tile[1]"/>
+          <Tile Number="2" Reference="tile[2]"/>
+          <Tile Number="3" Reference="tile[3]"/>
+        </Node>
+      </Nodes>
+    </Package>
+  </Packages>
+
+  <JTAGChain>
+     <JTAGDevice NodeId="0"/>
+  </JTAGChain>
+
+</Network>
+
